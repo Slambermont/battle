@@ -9,13 +9,13 @@ describe Game do
     it "should respond to attack" do
       expect(subject).to respond_to(:attack)
     end
-    it "should reduce opponent's hp by 10" do
-      allow(player_1).to receive(:hp=)
-      expect(subject.attack(player_1)).to eq 90
-    end
     it "should switch player every new turn" do
       subject.attack
-      expect(player_2).to have_received(:hp=)
+      expect(player_2).to have_received(:hp=).with(90)
+    end
+    it "should decide who's attacker and who's victim" do
+      subject.attack
+      expect(subject.attacker.name).to eq('Habs')
     end
   end
 

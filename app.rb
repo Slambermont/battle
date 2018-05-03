@@ -23,7 +23,7 @@ class Battle < Sinatra::Base
   get '/crust' do
     @player_1_name = $game.player_1.name
     @player_2_name = $game.player_2.name
-    @hp = $game.attack($game.player_2)
+    @hp = $game.attack
     erb(:crust)
   end
 

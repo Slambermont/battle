@@ -7,14 +7,14 @@
   </head>
 
 <body>
-  <h2>Alastair <%= @player_1_name %> attacked Alastair <%= @player_2_name %>...</h2>
+  <h2>Alastair <%= $game.attacker.name %> attacked Alastair <%= $game.victim.name %>...</h2>
 
   <h1>Another one bites the crust!</h1>
 
   <img src="http://9buz.com/content/uploads/images/October2014/1964894_10152509147373208_7425655208123780814_n.jpg">
 
   <h2 class="hp_reduction">
-    <%= @player_2_name %> now has <%= @hp %> Pitta points!
+    <%= $game.victim.name %> now has <%= $game.victim.hp %> Pitta points!
   </h2>
 
   <form action='/play' method='get'>
