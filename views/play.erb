@@ -23,6 +23,7 @@
 
   <div class='toast'>
     <img src="https://img00.deviantart.net/a474/i/2009/106/0/b/happy_toast_by_skyrunnerwolf.gif">
+    <p><%= @game.victim.nil? ? @game.player_1.name : @game.victim.name %>, you are ON!</p>
   </div>
 
   <div>

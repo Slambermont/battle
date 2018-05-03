@@ -8,12 +8,17 @@ class Game
   end
 
   def attack
-    if @counter%2 == 0
-      @player_2.hp -= 10
+    role
+    @victim.hp -= 10
+  end
+
+  private
+
+  def role
+    if @counter.even?
       @attacker = @player_1
       @victim = @player_2
     else
-      @player_1.hp -= 10
       @attacker = @player_2
       @victim = @player_1
     end

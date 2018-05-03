@@ -20,4 +20,17 @@ feature 'showing reduced pitta points' do
     click_on 'Keep playing!'
     expect(page).to have_content 'Salpal: 90 Pit(ta) Points'
   end
+
+  feature 'showing current turn' do
+    scenario 'shows player 1\'s turn' do
+      sign_in_and_play
+      expect(page).to have_content 'Habs, you are ON!'
+    end
+    scenario 'shows player\'s turn' do
+      sign_in_and_play
+      click_on(class: 'BREAD PITT')
+      click_on 'Keep playing!'
+      expect(page).to have_content 'Salpal, you are ON!'
+    end
+  end
 end
