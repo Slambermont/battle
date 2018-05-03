@@ -8,7 +8,7 @@
   <body>
 
 <div class='vs'>
-  <h1>Alastair <%= @player_1_name %> vs. Alastair <%= @player_2_name %></h1>
+  <h1>Alastair <%= @game.player_1.name %> vs. Alastair <%= @game.player_2.name %></h1>
 </div>
 
 <div class='loafers'>
@@ -18,7 +18,7 @@
 <div class='battle'>
   <div>
     <img src="https://media.licdn.com/dms/image/C4D03AQH_ymJLBGaYaQ/profile-displayphoto-shrink_800_800/0?e=1530748800&v=beta&t=4zaCV7f0NO-mkoHOhQMUGKnIKRbslCqehLbSzsrJsDk">
-    <h2><%= @player_1_name %>: Pit(ta) Points </h2>
+    <h2><%= @game.player_1.name %>: Pit(ta) Points </h2>
   </div>
 
   <div class='toast'>
@@ -27,7 +27,7 @@
 
   <div>
     <img src="https://i1.sndcdn.com/avatars-000061284255-pim52q-t500x500.jpg">
-    <h2><%= @player_2_name %>: Pit(ta) Points </h2>
+    <h2><%= @game.player_2.name %>: Pit(ta) Points </h2>
   </div>
 </div>
 
