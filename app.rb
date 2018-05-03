@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require './lib/alastair.rb'
+require './lib/game.rb'
 
 class Battle < Sinatra::Base
 
