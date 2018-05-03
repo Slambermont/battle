@@ -7,7 +7,7 @@ class Game
   end
 
   def attack(player)
-    player.hp - 10
+    player.hp -= 10
   end
 
 end

@@ -31,4 +31,5 @@ body {
 
 .toast img {
   height: 100px;
+  border: none;
 }

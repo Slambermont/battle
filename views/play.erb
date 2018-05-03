@@ -18,7 +18,7 @@
 <div class='battle'>
   <div>
     <img src="https://media.licdn.com/dms/image/C4D03AQH_ymJLBGaYaQ/profile-displayphoto-shrink_800_800/0?e=1530748800&v=beta&t=4zaCV7f0NO-mkoHOhQMUGKnIKRbslCqehLbSzsrJsDk">
-    <h2><%= @game.player_1.name %>: Pit(ta) Points </h2>
+    <h2><%= @game.player_1.name %>: <%=@game.player_1.hp%> Pit(ta) Points </h2>
   </div>
 
   <div class='toast'>
@@ -27,13 +27,14 @@
 
   <div>
     <img src="https://i1.sndcdn.com/avatars-000061284255-pim52q-t500x500.jpg">
-    <h2><%= @game.player_2.name %>: Pit(ta) Points </h2>
+    <h2><%= @game.player_2.name %>: <%=@game.player_2.hp%> Pit(ta) Points </h2>
   </div>
 </div>
 
-<form action='/crust' method='get'>
-  <button type='submit'>BREAD PITT</button>
-</form>
+<a href='/crust' class='BREAD PITT'>
+  <img src='https://pbs.twimg.com/profile_images/956155072454553602/uNnNsq7k_400x400.jpg'/>
+</a>
+
 
 </body>
 </html>

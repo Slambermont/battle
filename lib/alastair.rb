@@ -1,5 +1,6 @@
 class Alastair
-  attr_reader :name, :hp
+  attr_reader :name
+  attr_accessor :hp
 
   def initialize(name)
     @name = name
